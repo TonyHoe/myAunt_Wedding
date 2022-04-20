@@ -1,0 +1,464 @@
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family    : Arial, Helvetica, sans-serif;
+}
+
+/*@-------------------------- BEGIN --------------------------*/
+#begin {
+    display         : flex;
+    position        : fixed;
+    top             : 0;
+    right           : 0;
+    bottom          : 0;
+    left            : 0;
+    background-color: #fec7d7;
+    align-items     : center;
+    /* căn giữa chiều dọc (phải có flex) */
+    justify-content : center;
+    /* căn giữa chiều ngang (phải có flex) */
+}
+
+#spinner {
+    height       : 80px;
+    width        : 80px;
+    border       : 10px solid #0e172c;
+    border-radius: 100rem;
+    border-left  : 10px solid transparent;
+    border-right : 10px solid transparent;
+    animation    : spinner 1s 5 ease-in;
+    display      : none;
+    position: relative;
+    padding: 5px;
+}
+
+/* #begin::after {
+    content: "đang tải...";
+    font-size: 15px;
+    position: absolute;
+    animation: none;
+} */
+
+
+.ic-play {
+    position : absolute;
+    color    : #0e172c;
+    font-size: 70px;
+    cursor   : pointer;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*@-------------------------- HEADER --------------------------*/
+#header {
+    /* display        : flex; */
+}
+
+.h_title {
+    padding           : 5px 0;
+    color             : #F55353;
+    font              : 900 90px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-shadow       : 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition   : all 0.2s ease-out;
+    -o-tramsition     : all 0.2s ease-out;
+    animation         : text_animation 5s 10 ease-in;
+    position          : relative;
+    text-align: center;
+}
+
+.h_title:hover {
+    color      : #fff;
+    top        : -3px;
+    left       : -3px;
+    /* position:absolute;  */
+    text-shadow: 1px 1px #409FFF, 2px 2px #409FFF, 3px 3px #409FFF, 4px 4px #409FFF, 5px 5px #FF8080, 6px 6px #FF8080, 7px 7px #FF8080, 8px 8px #FF8080, 9px 9px #F1FB42, 10px 10px #F1FB42, 11px 11px #F1FB42, 12px 12px #F1FB42;
+}
+#audio-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Header chính */
+#main-header {
+}
+
+#main-header > .h-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    line-height: 30px;  
+}
+
+#main-header > .h-section > .section {
+    padding: 5px;
+    list-style: none;
+    /* border: 2px solid #FF8080 ; */
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    /* border-radius: 100rem; */
+}
+
+
+
+#main-header .h-section img {
+    width: 100px;
+    border-radius: 100rem;
+    cursor: pointer;
+}
+
+#main-header .h-section img:hover {
+
+}
+
+@keyframes text_animation {
+    0%,
+    100% {
+        -webkit-transform: translateX(-500px);
+        transform        : translateX(-500px)
+    }
+
+    50% {
+        -webkit-transform: translateX(500px);
+        transform        : translateX(500px)
+    }
+}
+
+
+
+
+/*@-------------------------- BACKGROUND --------------------------*/
+#back-ground__heart {
+    width     : 100%;
+    height    : 1000px;
+    display   : none;
+    background: linear-gradient(360deg,#FF8080, #fec7d7);
+}
+
+
+.heart-flake {
+    color                               : #fff;
+    font-size                           : 1em;
+    font-family                         : Arial, sans-serif;
+    text-shadow                         : 0 0 5px #000;
+    /* position                         : fixed; */
+    top                                 : -20%;
+    z-index                             : 9999;
+    -webkit-user-select                 : none;
+    -moz-user-select                    : none;
+    -ms-user-select                     : none;
+    user-select                         : none;
+    cursor                              : default;
+    -webkit-animation-name              : heartflakes-fall, heartflakes-shake;
+    -webkit-animation-duration          : 10s, 3s;
+    -webkit-animation-timing-function   : linear, ease-in-out;
+    -webkit-animation-iteration-count   : infinite, infinite;
+    -webkit-animation-play-state        : running, running;
+    animation-name                      : heartflakes-fall, heartflakes-shake;
+    animation-duration                  : 10s, 3s;
+    animation-timing-function           : linear, ease-in-out;
+    animation-iteration-count           : infinite, infinite;
+    animation-play-state                : running, running;
+}
+
+.heart-flake:nth-of-type(0) {
+    left                   : 1%;
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay        : 0s, 0s
+}
+
+.heart-flake:nth-of-type(1) {
+    left                   : 10%;
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay        : 1s, 1s
+}
+
+.heart-flake:nth-of-type(2) {
+    left                   : 20%;
+    -webkit-animation-delay: 6s, .5s;
+    animation-delay        : 6s, .5s
+}
+
+.heart-flake:nth-of-type(3) {
+    left                   : 30%;
+    -webkit-animation-delay: 4s, 2s;
+    animation-delay        : 4s, 2s
+}
+
+.heart-flake:nth-of-type(4) {
+    left                   : 40%;
+    -webkit-animation-delay: 2s, 2s;
+    animation-delay        : 2s, 2s
+}
+
+.heart-flake:nth-of-type(5) {
+    left                   : 50%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay        : 8s, 3s
+}
+
+.heart-flake:nth-of-type(6) {
+    left                   : 20%;
+    -webkit-animation-delay: 6s, 2s;
+    animation-delay        : 6s, 2s
+}
+
+.heart-flake:nth-of-type(7) {
+    left                   : 70%;
+    -webkit-animation-delay: 2.5s, 1s;
+    animation-delay        : 2.5s, 1s
+}
+
+.heart-flake:nth-of-type(8) {
+    left                   : 80%;
+    -webkit-animation-delay: 1s, 0s;
+    animation-delay        : 1s, 0s
+}
+
+.heart-flake:nth-of-type(9) {
+    left                   : 90%;
+    -webkit-animation-delay: 3s, 1.5s;
+    animation-delay        : 3s, 1.5s
+}
+
+.heart-flake:nth-of-type(10) {
+    left                   : 25%;
+    -webkit-animation-delay: 2s, 0s;
+    animation-delay        : 2s, 0s
+}
+
+.heart-flake:nth-of-type(11) {
+    left                   : 65%;
+    -webkit-animation-delay: 4s, 2.5s;
+    animation-delay        : 4s, 2.5s
+}
+
+.heart-flake:nth-of-type(12) {
+    left                   : 35%;
+    -webkit-animation-delay: 2s, 0.5s;
+    animation-delay        : 2s, 0.5s
+}
+
+.heart-flake:nth-of-type(13) {
+    left                   : 45%;
+    -webkit-animation-delay: 3s, 2.5s;
+    animation-delay        : 3s, 2.5s
+}
+
+.heart-flake:nth-of-type(14) {
+    left                   : 85%;
+    -webkit-animation-delay: 5s, 2.5s;
+    animation-delay        : 5s, 2.5s
+}
+
+.heart-flake:nth-of-type(15) {
+    left                   : 5%;
+    -webkit-animation-delay: 2s, 2.5s;
+    animation-delay        : 2s, 2.5s
+}
+
+.heart-flake:nth-of-type(16) {
+    left                   : 15%;
+    -webkit-animation-delay: 5s, 2.5s;
+    animation-delay        : 5s, 2.5s
+}
+
+@-webkit-keyframes heartflakes-fall {
+    0% {
+        top: -15%
+    }
+
+    100% {
+        top: 100%
+    }
+}
+
+@-webkit-keyframes heartflakes-shake {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform        : translateX(0)
+    }
+
+    50% {
+        -webkit-transform: translateX(80px);
+        transform        : translateX(80px)
+    }
+}
+
+@keyframes heartflakes-fall {
+    0% {
+        top: -10%
+    }
+
+    100% {
+        top: 100%
+    }
+}
+
+@keyframes heartflakes-shake {
+
+    0%,
+    100% {
+        transform: translateX(0)
+    }
+
+    50% {
+        transform: translateX(80px)
+    }
+}
+
+@-webkit-keyframes heartflakes-fall {
+    0% {
+        top: -10%
+    }
+
+    100% {
+        top: 100%
+    }
+}
+
+@-webkit-keyframes heartflakes-shake {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform        : translateX(0)
+    }
+
+    50% {
+        -webkit-transform: translateX(80px);
+        transform        : translateX(80px)
+    }
+}
+
+@keyframes heartflakes-fall {
+    0% {
+        top: -10%
+    }
+
+    100% {
+        top: 100%
+    }
+}
+
+@keyframes heartflakes-shake {
+
+    0%,
+    100% {
+        transform: translateX(0)
+    }
+
+    50% {
+        transform: translateX(80px)
+    }
+}
+
+.heart-flake {
+    color                            : #fff;
+    font-size                        : 3em;
+    font-family                      : Arial, sans-serif;
+    text-shadow                      : 0 0 5px #000;
+    position                         : fixed;
+    top                              : -10%;
+    z-index                          : 9999;
+    -webkit-user-select              : none;
+    -moz-user-select                 : none;
+    -ms-user-select                  : none;
+    user-select                      : none;
+    cursor                           : default;
+    -webkit-animation-name           : heartflakes-fall, heartflakes-shake;
+    -webkit-animation-duration       : 10s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state     : running, running;
+    animation-name                   : heartflakes-fall, heartflakes-shake;
+    animation-duration               : 10s, 3s;
+    animation-timing-function        : linear, ease-in-out;
+    animation-iteration-count        : infinite, infinite;
+    animation-play-state             : running, running;
+}
+
+.heart-flake:nth-of-type(0) {
+    left                   : 1%;
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay        : 0s, 0s
+}
+
+.heart-flake:nth-of-type(1) {
+    left                   : 10%;
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay        : 1s, 1s
+}
+
+.heart-flake:nth-of-type(2) {
+    left                   : 20%;
+    -webkit-animation-delay: 6s, .5s;
+    animation-delay        : 6s, .5s
+}
+
+.heart-flake:nth-of-type(3) {
+    left                   : 30%;
+    -webkit-animation-delay: 4s, 2s;
+    animation-delay        : 4s, 2s
+}
+
+.heart-flake:nth-of-type(4) {
+    left                   : 40%;
+    -webkit-animation-delay: 2s, 2s;
+    animation-delay        : 2s, 2s
+}
+
+.heart-flake:nth-of-type(5) {
+    left                   : 50%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay        : 8s, 3s
+}
+
+.heart-flake:nth-of-type(6) {
+    left                   : 60%;
+    -webkit-animation-delay: 6s, 2s;
+    animation-delay        : 6s, 2s
+}
+
+.heart-flake:nth-of-type(7) {
+    left                   : 70%;
+    -webkit-animation-delay: 2.5s, 1s;
+    animation-delay        : 2.5s, 1s
+}
+
+.heart-flake:nth-of-type(8) {
+    left                   : 80%;
+    -webkit-animation-delay: 1s, 0s;
+    animation-delay        : 1s, 0s
+}
+
+.heart-flake:nth-of-type(9) {
+    left                   : 90%;
+    -webkit-animation-delay: 3s, 1.5s;
+    animation-delay        : 3s, 1.5s
+}
+
+.heart-flake:nth-of-type(10) {
+    left                   : 25%;
+    -webkit-animation-delay: 2s, 0s;
+    animation-delay        : 2s, 0s
+}
+
+.heart-flake:nth-of-type(11) {
+    left                   : 65%;
+    -webkit-animation-delay: 4s, 2.5s;
+    animation-delay        : 4s, 2.5s
+}
