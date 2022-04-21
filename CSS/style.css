@@ -134,10 +134,64 @@ html {
         transform        : translateX(500px)
     }
 }
+/*@-------------------------- SLIDER --------------------------*/
+.slider {
+    max-width: 1000px;
+    margin: 25px auto;
+    position: relative;
+}
 
+.slider .slider-pre {
+    left: -25px;
+}
 
+.slider .slider-next {
+    right: -25px;
+}
 
+.slider .slider-pre,
+.slider .slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    background-color: antiquewhite;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+}
 
+.slider-wrapper {
+    width: 100%;
+    height: 600px;
+    overflow: hidden; /* ẩn hình sau bị lòi ra */  
+    position: relative;
+    display: flex;
+}
+
+.slider-main {
+    display: flex;
+    position: relative;
+}
+
+.slider-item {
+    height: 100%;
+    width: 100%;
+    /* flex-row: 1 (cho phép dãn ra) 
+       flex-shink: 0 (ko cho phép bị thu lại, khi nào cũng nẳm ở vị trí đó) 
+       flex-basis: 100% (width của item luôn luôn full) */
+    flex: 1 0 100%;
+}
+
+.slider-item img {
+    width: 100%;
+}
 /*@-------------------------- BACKGROUND --------------------------*/
 #back-ground__heart {
     width     : 100%;
