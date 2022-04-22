@@ -63,6 +63,7 @@ html {
 #header {
     /* background-color: antiquewhite; */
     background-size: 100%  ;
+    margin-bottom: 100px;
 }
 
 .h_title {
