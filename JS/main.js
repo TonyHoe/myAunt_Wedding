@@ -62,7 +62,7 @@ window.addEventListener("load", function () {
             //_ auto change slide
             setInterval(function () {
                 HandleChangeSlide(1);
-            }, 3000);
+            }, 4000);
 
         }, 0);
     }

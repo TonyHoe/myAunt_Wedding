@@ -63,7 +63,8 @@ html {
 #header {
     /* background-color: antiquewhite; */
     background-size: 100%  ;
-    margin-bottom: 100px;
+    margin-bottom: 10
+    0px;
 }
 
 .h_title {
@@ -175,6 +176,7 @@ html {
 
 .slider_item img {
     visibility: hidden;
+    width: 100%;
 }
 
 .slider_item:nth-child(1) {
@@ -201,6 +203,42 @@ html {
 .slider_item:nth-child(4) {
     width          : 100%;
     background     : url('../assets/img/main4.JPG') no-repeat;
+    background-size: contain;
+    z-index        : 4;
+}
+.slider_item:nth-child(5) {
+    width          : 100%;
+    background     : url('../assets/img/main5.JPG') no-repeat;
+    background-size: contain;
+    z-index        : 4;
+}
+.slider_item:nth-child(6) {
+    width          : 100%;
+    background     : url('../assets/img/main6.JPG') no-repeat;
+    background-size: contain;
+    z-index        : 4;
+}
+.slider_item:nth-child(7) {
+    width          : 100%;
+    background     : url('../assets/img/main7.JPG') no-repeat;
+    background-size: contain;
+    z-index        : 4;
+}
+.slider_item:nth-child(8) {
+    width          : 100%;
+    background     : url('../assets/img/main8.JPG') no-repeat;
+    background-size: contain;
+    z-index        : 4;
+}
+.slider_item:nth-child(9) {
+    width          : 100%;
+    background     : url('../assets/img/main9.JPG') no-repeat;
+    background-size: contain;
+    z-index        : 4;
+}
+.slider_item:nth-child(10) {
+    width          : 100%;
+    background     : url('../assets/img/main10.JPG') no-repeat;
     background-size: contain;
     z-index        : 4;
 }
