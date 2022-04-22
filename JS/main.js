@@ -62,8 +62,8 @@ window.addEventListener("load", function () {
             //_ auto change slide
             setInterval(function () {
                 HandleChangeSlide(1);
-            }, 4000);
+            }, 5000);
 
-        }, 0);
+        }, 4500);
     }
 })
