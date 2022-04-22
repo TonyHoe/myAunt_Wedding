@@ -61,7 +61,8 @@ html {
 
 /*@-------------------------- HEADER --------------------------*/
 #header {
-    background: linear-gradient(#fec7d7, #F55353);
+    /* background-color: antiquewhite; */
+    background-size: 100%  ;
 }
 
 .h_title {
@@ -75,6 +76,7 @@ html {
     /* animation         : text_animation 5s 10 ease-in; */
     position          : relative;
     text-align        : center;
+    opacity: 1;
 }
 
 .h_title:hover {
@@ -137,9 +139,9 @@ html {
 
 /*@-------------------------- WEDDING SECTION --------------------------*/
 #slider {
-    width   : auto;
+    width   : 100%;
     position: relative;
-    max-height: 2200px;
+    max-height: 3000px;
 }
 
 
@@ -148,17 +150,22 @@ html {
     /* ẩn hình sau bị lòi ra */
     position: relative;
     overflow: hidden;
+    /* background: linear-gradient(to left,#fec7d7,antiquewhite) */
 }
 
 .slider-main {
     position: relative;
     width   : 100%;
     display : flex;
-    transition: transform 0.25s linear;
+    height: 100%;
+    transition: transform 0.5s step-end;
 }
 
 .slider_item {
     width        : 100%;
+    user-select: none;
+    border-radius: 100em;
+    max-height: 3000px;
     flex         : 1 0 100%;
     /* flex-row  : 1 (cho phép dãn ra) 
        flex-shink: 0 (ko cho phép bị thu lại, khi nào cũng nẳm ở vị trí đó) 
@@ -208,7 +215,7 @@ html {
 .slider-prev,
 .slider-next {
     position        : absolute;
-    top             : 50%;
+    top             : 40%;
     transform       : translateY(-50%);
     width           : 50px;
     height          : 50px;
@@ -223,11 +230,31 @@ html {
     z-index         : 9999999;
 }
 
+.slider-dots {
+    display: flex;
+    position: absolute;    
+    bottom: 25px;
+    left: 50%;
+    justify-content: center;
+    z-index: 99999;
+    list-style: none;
+    transform: translateX(-50%);
+}
+
+.sld-dot-item {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #0e172c;
+    margin-right: 10px;
+    border-radius: 100rem;
+}
+
 /*@-------------------------- BACKGROUND --------------------------*/
 #back-ground__heart {
     width     : 100%;
     display   : none;
-    background: linear-gradient(360deg, #dbd1d0);
+    background: url('../assets/img/main-background.jpg') no-repeat;
+
 }
 
 
