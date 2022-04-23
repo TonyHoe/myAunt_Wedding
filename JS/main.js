@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
         spinner.style.display = 'block';
 
 
-        //_ Slider variabe
+        //_ Slider variables
         var slider = document.getElementById('#slider');
         var sliderMain = document.querySelector('.slider-main');
         var sliderItems = document.querySelectorAll('.slider_item');
@@ -23,7 +23,7 @@ window.addEventListener("load", function () {
         let positionX = 0;
         let index = 0;
 
-        //_ thời gian hiện layout của slider
+        //_ set thời gian hiện main layout
         setTimeout(() => {
             beginPage.style.display = 'none'
             main_page.style.display = 'block'
@@ -35,11 +35,9 @@ window.addEventListener("load", function () {
             //_ Đóng mở modal Bridge 
             var btnBridge = document.querySelector('.js-bride');
             var modalBridge = document.querySelector('.js-modal-bridge');
-
             function ShowModalBridge() {
                 modalBridge.classList.add('open');
             }
-
             function CloseModalBridge() {
                 modalBridge.classList.remove('open')
             }
@@ -49,16 +47,26 @@ window.addEventListener("load", function () {
             //_ Đóng mở modal Groom 
             var btnGroom = document.querySelector('.js-groom');
             var modalGroom = document.querySelector('.js-modal-groom');
-
             function ShowModalGroom() {
                 modalGroom.classList.add('open');
             }
-
             function CloseModalGroom() {
                 modalGroom.classList.remove('open');
             }
             btnGroom.addEventListener("click", ShowModalGroom);
             btnClose_Modal[1].addEventListener("click", CloseModalGroom);
+
+            //_ Đóng mở modal Family
+            var btnFamily = document.querySelector('.js-family');
+            var modalFamily = document.querySelector('.js-modal-family');
+            function ShowModalFamily() {
+                modalFamily.classList.add('open');
+            }
+            function CloseModalFamily() {
+                modalFamily.classList.remove('open');
+            }
+            btnFamily.addEventListener("click", ShowModalFamily);
+            btnClose_Modal[2].addEventListener("click", CloseModalFamily);
 
 
             //_ Slider

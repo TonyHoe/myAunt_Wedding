@@ -3,7 +3,6 @@
     margin    : 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
     font-family    : Arial, Helvetica, sans-serif;
@@ -23,7 +22,6 @@ html {
     justify-content : center;
     /* căn giữa chiều ngang (phải có flex) */
 }
-
 #spinner {
     height       : 80px;
     width        : 80px;
@@ -36,15 +34,12 @@ html {
     position     : relative;
     padding      : 5px;
 }
-
 /* #begin::after {
     content: "đang tải...";
     font-size: 15px;
     position: absolute;
     animation: none;
 } */
-
-
 .ic-play {
     position : absolute;
     color    : #0e172c;
@@ -53,11 +48,6 @@ html {
     transform: translateY(-50%) translateX(-50%);
 }
 
-@keyframes spinner {
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 /*@-------------------------- HEADER --------------------------*/
 #header {
@@ -103,6 +93,15 @@ html {
     line-height    : 30px;
 }
 
+#main-header .section {
+    cursor: pointer;
+}
+
+#main-header .h-section img {
+    width        : 100px;
+    border-radius: 100rem;
+}
+
 #main-header>.h-section>.section {
     padding         : 5px;
     list-style      : none;
@@ -113,7 +112,8 @@ html {
     /* border-radius: 100rem; */
 }
 
-/*@------------------------------ MODAL BRIDE ---------------------------*/
+
+/*@------------------------------ SHARED MODAL ---------------------------*/
 #modal-bridge ,
 #modal-groom,
 #modal-family {
@@ -137,46 +137,6 @@ html {
     z-index: 999999999;
 }
 
-#modal-bridge .modal-body .modal-item:nth-child(1) {
-    background-image: url("../assets/img/aunt1.JPG");
-} 
-
-#modal-bridge .modal-body .modal-item:nth-child(2) {
-    background-image: url("../assets/img/aunt2.JPG");
-} 
-
-#modal-bridge .modal-body .modal-item:nth-child(3) {
-    background-image: url("../assets/img/aunt3.JPG");
-}
-
-#modal-bridge .modal-body .modal-item:nth-child(4) {
-    background-image: url("../assets/img/aunt5.JPG");
-} 
-
-#modal-groom .modal-container {
-    background-image: linear-gradient(#abbaab, #ffffff);
-}
-
-/*@------------------------------ MODAL GROOM ---------------------------*/
-#modal-groom .modal-body .modal-item:nth-child(1) {
-    background-image: url("../assets/img/uncle1.JPG");
-} 
-
-#modal-groom .modal-body .modal-item:nth-child(2) {
-    background-image: url("../assets/img/uncle2.JPG");
-} 
-#modal-groom .modal-body .modal-item:nth-child(3) {
-    background-image: url("../assets/img/uncle3.JPG");
-} 
-#modal-groom .modal-body .modal-item:nth-child(4) {
-    background-image: url("../assets/img/uncle4.JPG");
-} 
-
-#modal-groom .modal-container {
-    background-image: linear-gradient(#485563, #29323c);
-
-}
-
 .modal-container {
     position     : relative;
     background   : #fff;
@@ -187,7 +147,6 @@ html {
     /* Khi co nhỏ màn hình < 1200px 
     -> tạo ra 1 khoảng hở mỗi bên 16px */
 }
-
 
 .modal-container .close-btn {
     position              : absolute;
@@ -235,42 +194,60 @@ html {
     background-repeat: no-repeat;
     background-size: cover; */
 }
-
-
-
-
-
-
 /*@------------------------------ MODAL BRIDE ---------------------------*/
-#main-header .section {
-    cursor: pointer;
+#modal-bridge .modal-body .modal-item:nth-child(1) {
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/aunt1.jpg?raw=true");
+} 
+#modal-bridge .modal-body .modal-item:nth-child(2) {
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/aunt2.JPG?raw=true");
+} 
+#modal-bridge .modal-body .modal-item:nth-child(3) {
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/aunt3.JPG?raw=true");
+}
+#modal-bridge .modal-body .modal-item:nth-child(4) {
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/aunt5.JPG?raw=true");
+} 
+#modal-groom .modal-container {
+    background-image: linear-gradient(#abbaab, #ffffff);
 }
 
-#main-header .h-section img {
-    width        : 100px;
-    border-radius: 100rem;
+/*@------------------------------ MODAL GROOM ---------------------------*/
+#modal-groom .modal-body .modal-item:nth-child(1) {
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/uncle1.JPG?raw=true");
+} 
+#modal-groom .modal-body .modal-item:nth-child(2) {
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/uncle2.JPG?raw=true");
+} 
+#modal-groom .modal-body .modal-item:nth-child(3) {
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/uncle3.JPG?raw=true");
+} 
+#modal-groom .modal-body .modal-item:nth-child(4) {
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/uncle4.JPG?raw=true");
+} 
+#modal-groom .modal-container {
+    background-image: linear-gradient(#485563, #29323c);
 }
 
-
-@keyframes text_animation {
-    to {
-        color: #fec7d7;
-    }
-
-    /* 
-    0%,
-    100% {
-        -webkit-transform: translateX(-500px);
-        transform        : translateX(-500px)
-    }
-
-    50% {
-        -webkit-transform: translateX(500px);
-        transform        : translateX(500px)
-    } */
+/*@------------------------------ MODAL FAMILY ---------------------------*/
+#modal-family .modal-container {
+    background-image: linear-gradient(#649173, #dbd5a4);
 }
 
-/*@-------------------------- WEDDING SECTION --------------------------*/
+#modal-family .modal-body .modal-item:nth-child(1) {
+    background-image: url("../assets/img/uncle1.JPG");
+} 
+#modal-family .modal-body .modal-item:nth-child(2) {
+    background-image: url("../assets/img/uncle2.JPG");
+} 
+#modal-family .modal-body .modal-item:nth-child(3) {
+    background-image: url("../assets/img/uncle3.JPG");
+} 
+#modal-family .modal-body .modal-item:nth-child(4) {
+    background-image: url("../assets/img/uncle4.JPG");
+} 
+
+
+/*@-------------------------- SLIDER --------------------------*/
 #slider {
     width      : 100%;
     position   : relative;
@@ -560,6 +537,32 @@ html {
     left                   : 15%;
     -webkit-animation-delay: 5s, 2.5s;
     animation-delay        : 5s, 2.5s
+}
+
+
+/*@------------------------------ ANIMATION ---------------------------*/
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes text_animation {
+    to {
+        color: #fec7d7;
+    }
+
+    /* 
+    0%,
+    100% {
+        -webkit-transform: translateX(-500px);
+        transform        : translateX(-500px)
+    }
+
+    50% {
+        -webkit-transform: translateX(500px);
+        transform        : translateX(500px)
+    } */
 }
 
 @-webkit-keyframes heartflakes-fall {
