@@ -114,7 +114,9 @@ html {
 }
 
 /*@------------------------------ MODAL BRIDE ---------------------------*/
-#modal-bridge {
+#modal-bridge ,
+#modal-groom,
+#modal-family {
     position        : fixed;
     top             : 0;
     bottom          : 0;
@@ -128,35 +130,120 @@ html {
 }
 
 /* css tới element nào có id="modal-bridge" và class="open" */
-#modal-bridge.open {
+#modal-bridge.open, 
+#modal-groom.open,
+#modal-family.open  {
     display: flex;
+    z-index: 999999999;
+}
+
+#modal-bridge .modal-body .modal-item:nth-child(1) {
+    background-image: url("/assets/img/aunt1.JPG");
+} 
+
+#modal-bridge .modal-body .modal-item:nth-child(2) {
+    background-image: url("/assets/img/aunt2.JPG");
+} 
+
+#modal-bridge .modal-body .modal-item:nth-child(3) {
+    background-image: url("/assets/img/aunt3.JPG");
+}
+
+#modal-bridge .modal-body .modal-item:nth-child(4) {
+    background-image: url("/assets/img/aunt5.JPG");
+} 
+
+#modal-groom .modal-container {
+    background-image: linear-gradient(#abbaab, #ffffff);
+}
+
+/*@------------------------------ MODAL GROOM ---------------------------*/
+#modal-groom .modal-body .modal-item:nth-child(1) {
+    background-image: url("/assets/img/uncle1.JPG");
+} 
+
+#modal-groom .modal-body .modal-item:nth-child(2) {
+    background-image: url("/assets/img/uncle2.JPG");
+} 
+#modal-groom .modal-body .modal-item:nth-child(3) {
+    background-image: url("/assets/img/uncle3.JPG");
+} 
+#modal-groom .modal-body .modal-item:nth-child(4) {
+    background-image: url("/assets/img/uncle4.JPG");
+} 
+
+#modal-groom .modal-container {
+    background-image: linear-gradient(#485563, #29323c);
+
 }
 
 .modal-container {
-    position  : relative;
-    background: #fff;
-    width     : 1200px;
-    min-height: 200px;
-    max-width : calc(100% - 32px);
+    position     : relative;
+    background   : #fff;
+    width        : 900px;
+    max-height   : 700px;
+    overflow     : scroll; /* nội dung vượt quá -> trượt xuống được */
+    max-width    : calc(1200px - 32px);
     /* Khi co nhỏ màn hình < 1200px 
     -> tạo ra 1 khoảng hở mỗi bên 16px */
 }
 
+
 .modal-container .close-btn {
-    position: absolute;
-    top     : 0;
-    right   : 0;
-    padding : 15px;
-    cursor  : pointer;
-    background-color   : #000;
-    color: #fff;
+    position              : absolute;
+    top                   : 0;
+    right                 : 0;
+    padding               : 15px;
+    cursor                : pointer;
+    /* background-color   : #000; */
+    color                 : #000;
+    font-size             : 20px;
+    font-weight           : bold;
 }
 
-.modal-container .close-btn:hover {}
+.modal-container .close-btn:hover {
+    opacity: 0.4;
+}
+
+.modal-container h3 {
+    padding   : 10px;
+    font-size : 30px;
+    text-align: center;
+}
+
+.modal-body {
+    padding: 10px;
+}
+
+.modal-body .modal-item {
+    /* Set a specific height */
+    height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-size      : contain;
+    border-radius: 100rem;
+
+    /* 
+    * ví dụ attachment:fixed use percent
+    background-image: url("img_parallax.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+
+
+
+
 
 /*@------------------------------ MODAL BRIDE ---------------------------*/
 #main-header .section {
-    cursor       : pointer;
+    cursor: pointer;
 }
 
 #main-header .h-section img {
@@ -167,7 +254,7 @@ html {
 
 @keyframes text_animation {
     to {
-      color: #fec7d7;  
+        color: #fec7d7;
     }
 
     /* 
@@ -197,7 +284,6 @@ html {
     /* ẩn hình sau bị lòi ra */
     position     : relative;
     overflow     : hidden;
-    /* background: linear-gradient(to left,#fec7d7,antiquewhite) */
 }
 
 
