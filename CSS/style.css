@@ -209,7 +209,7 @@ html {
 #modal-bridge .modal-body .modal-item:nth-child(4) {
     background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/aunt5.JPG?raw=true");
 } 
-#modal-groom .modal-container {
+#modal-bridge .modal-container {
     background-image: linear-gradient(#abbaab, #ffffff);
 }
 
