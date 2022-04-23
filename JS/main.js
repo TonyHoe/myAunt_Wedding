@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+// window.addEventListener("load", function () {
     var btn_Play = document.querySelector('#modal-play .ic-play');
     var main_page = document.getElementById('main_page');
     var background__heart = document.getElementById('back-ground__heart');
@@ -7,7 +7,27 @@ window.addEventListener("load", function () {
         var spinner = document.getElementById('spinner');
         var beginPage = document.getElementById('begin');
         var audioBox = document.querySelector('#audio-container .audio-content');
-        //_ SLIDER
+
+        //_ Hiện loading
+        btn_Play.style.display = 'none';
+        spinner.style.display = 'block';
+
+        
+        //_ Đóng mở modal Bridge 
+        var btnBridge = document.querySelector('.js-bride');
+        var btnClose_Modal = document.querySelector('.js-close-btn');
+        var modalBridge = document.querySelector('.js-modal-bridge');
+        function ShowModal() {
+            modalBridge.classList.add('open')
+        }
+        function CloseModal() {
+            modalBridge.classList.remove('open')
+        }
+        btnBridge.addEventListener("click", ShowModal);
+        btnClose_Modal.addEventListener("click", CloseModal);
+
+
+        //_ Slider variabe
         var slider = document.getElementById('#slider');
         var sliderMain = document.querySelector('.slider-main');
         var sliderItems = document.querySelectorAll('.slider_item');
@@ -17,18 +37,14 @@ window.addEventListener("load", function () {
         let positionX = 0;
         let index = 0;
 
-        // Hiện loading
-        btn_Play.style.display = 'none';
-        spinner.style.display = 'block';
-
-        // thời gian hiện layout
+        //_ thời gian hiện layout của slider
         setTimeout(() => {
             beginPage.style.display = 'none'
             main_page.style.display = 'block'
             background__heart.style.display = 'block'
             audioBox.play();
 
-            // Slider
+            //_ Slider
             var sliderItemWidth = sliderItems[0].offsetWidth;
             nextBtn.addEventListener("click", function () {
                 HandleChangeSlide(1);
@@ -66,4 +82,5 @@ window.addEventListener("load", function () {
 
         }, 4500);
     }
-})
+
+// })

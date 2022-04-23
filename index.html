@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="icon" href="./assets/fonts/favicon/favicon_wedding.gif" type="image/x-icon">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <base href="https://tonyhoe.github.io/myAunt_Wedding/">
 </head>
 
 <body>
@@ -36,19 +37,18 @@
                         <source src="./assets/MP3/i_do_911.mp3" type="audio/mpeg">
                     </audio>
                 </div>
-
                 <div id="main-header">
                     <ul class="h-section">
-                        <li class="section ">
-                            <a href="#"><img class="bride" src="./assets/IMG/icon_bride_1.jpg" alt=""></a>
+                        <li class="section js-bride ">
+                            <a href="#"><img src="./assets/IMG/icon_bride_1.jpg" alt=""></a>
                             <h3>𝓑𝓡𝓘𝓓𝓔</h3>
                         </li>
-                        <li class="section groom">
-                            <a href="#"><img class="groom" src="./assets/IMG/icon_groom.jpg" alt=""></a>
+                        <li class="section js-groom">
+                            <a href="#"><img src="./assets/IMG/icon_groom.jpg" alt=""></a>
                             <h3>𝓖𝓡𝓞𝓞𝓜</h3>
                         </li>
-                        <li class="section ">
-                            <img class="w-day" src="./assets/IMG/icon_family.jpg" alt="">
+                        <li class="section js-family">
+                            <img src="./assets/IMG/icon_family.jpg" alt="">
                             <h3>𝓕𝓐𝓜𝓘𝓛𝓨</h3>
                         </li>
                     </ul>
@@ -126,6 +126,15 @@
         </div>
 
 
+    </div>
+
+    <!-- thêm class="open" để mở modal lên -->
+    <div id="modal-bridge" class="js-modal-bridge">
+        <div class="modal-container">
+            <div class="modal-close">
+                <i class="ti-close close-btn js-close-btn"></i>
+            </div>
+        </div>
     </div>
 </body>
 <script src="./JS/main.js"></script>

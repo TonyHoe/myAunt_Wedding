@@ -62,8 +62,8 @@ html {
 /*@-------------------------- HEADER --------------------------*/
 #header {
     /* background-color: antiquewhite; */
-    background-size: 100%  ;
-    margin-bottom: 100px;
+    background-size: 100%;
+    margin-bottom  : 100px;
 }
 
 .h_title {
@@ -74,10 +74,10 @@ html {
     -webkit-transition: all 0.2s ease-out;
     -moz-transition   : all 0.2s ease-out;
     -o-tramsition     : all 0.2s ease-out;
-    /* animation         : text_animation 5s 10 ease-in; */
+    animation         : text_animation .5s infinite ease-in;
     position          : relative;
     text-align        : center;
-    opacity: 1;
+    opacity           : 1;
 }
 
 .h_title:hover {
@@ -94,8 +94,7 @@ html {
 }
 
 /* Header chính */
-#main-header {
-}
+#main-header {}
 
 #main-header>.h-section {
     display        : flex;
@@ -114,8 +113,48 @@ html {
     /* border-radius: 100rem; */
 }
 
+/*@------------------------------ MODAL BRIDE ---------------------------*/
+#modal-bridge {
+    position        : fixed;
+    top             : 0;
+    bottom          : 0;
+    right           : 0;
+    left            : 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    display         : none;
+}
 
+/* css tới element nào có id="modal-bridge" và class="open" */
+#modal-bridge.open {
+    display: flex;
+}
 
+.modal-container {
+    position  : relative;
+    background: #fff;
+    width     : 1200px;
+    min-height: 200px;
+    max-width : calc(100% - 32px);
+    /* Khi co nhỏ màn hình < 1200px 
+    -> tạo ra 1 khoảng hở mỗi bên 16px */
+}
+
+.modal-container .close-btn {
+    position: absolute;
+    top     : 0;
+    right   : 0;
+    padding : 15px;
+    cursor  : pointer;
+    background-color   : #000;
+    color: #fff;
+}
+
+.modal-container .close-btn:hover {}
+
+/*@------------------------------ MODAL BRIDE ---------------------------*/
 #main-header .h-section img {
     width        : 100px;
     border-radius: 100rem;
@@ -125,7 +164,11 @@ html {
 #main-header .h-section img:hover {}
 
 @keyframes text_animation {
+    to {
+      color: #fec7d7;  
+    }
 
+    /* 
     0%,
     100% {
         -webkit-transform: translateX(-500px);
@@ -135,38 +178,40 @@ html {
     50% {
         -webkit-transform: translateX(500px);
         transform        : translateX(500px)
-    }
+    } */
 }
 
 /*@-------------------------- WEDDING SECTION --------------------------*/
 #slider {
-    width   : 100%;
-    position: relative;
-    max-height: 3000px;
+    width      : 100%;
+    position   : relative;
+    max-height : 3000px;
+    margin-left: -5px;
 }
 
 
 .slider-wrapper {
-    width   : 100%;
+    width        : 100%;
     /* ẩn hình sau bị lòi ra */
-    position: relative;
-    overflow: hidden;
+    position     : relative;
+    overflow     : hidden;
     /* background: linear-gradient(to left,#fec7d7,antiquewhite) */
 }
 
+
 .slider-main {
-    position: relative;
-    width   : 100%;
-    display : flex;
-    height: 100%;
+    position  : relative;
+    width     : 100%;
+    display   : flex;
+    height    : 100%;
     transition: transform 0.5s step-end;
 }
 
 .slider_item {
     width        : 100%;
-    user-select: none;
+    user-select  : none;
     border-radius: 100em;
-    max-height: 3000px;
+    max-height   : 3000px;
     flex         : 1 0 100%;
     /* flex-row  : 1 (cho phép dãn ra) 
        flex-shink: 0 (ko cho phép bị thu lại, khi nào cũng nẳm ở vị trí đó) 
@@ -175,7 +220,7 @@ html {
 
 .slider_item img {
     visibility: hidden;
-    width: 100%;
+    width     : 100%;
 }
 
 .slider_item:nth-child(1) {
@@ -205,36 +250,42 @@ html {
     background-size: contain;
     z-index        : 4;
 }
+
 .slider_item:nth-child(5) {
     width          : 100%;
     background     : url('../assets/img/main5.JPG') no-repeat;
     background-size: contain;
     z-index        : 4;
 }
+
 .slider_item:nth-child(6) {
     width          : 100%;
     background     : url('../assets/img/main6.JPG') no-repeat;
     background-size: contain;
     z-index        : 4;
 }
+
 .slider_item:nth-child(7) {
     width          : 100%;
     background     : url('../assets/img/main7.JPG') no-repeat;
     background-size: contain;
     z-index        : 4;
 }
+
 .slider_item:nth-child(8) {
     width          : 100%;
     background     : url('../assets/img/main8.JPG') no-repeat;
     background-size: contain;
     z-index        : 4;
 }
+
 .slider_item:nth-child(9) {
     width          : 100%;
     background     : url('../assets/img/main9.JPG') no-repeat;
     background-size: contain;
     z-index        : 4;
 }
+
 .slider_item:nth-child(10) {
     width          : 100%;
     background     : url('../assets/img/main10.JPG') no-repeat;
@@ -248,7 +299,7 @@ html {
 
 .slider-next {
     right: 50px;
-} 
+}
 
 .slider-prev,
 .slider-next {
@@ -269,21 +320,21 @@ html {
 }
 
 .slider-dots {
-    display: flex;
-    position: absolute;    
-    bottom: 25px;
-    left: 50%;
+    display        : flex;
+    position       : absolute;
+    bottom         : 25px;
+    left           : 50%;
     justify-content: center;
-    z-index: 99999;
-    list-style: none;
-    transform: translateX(-50%);
+    z-index        : 99999;
+    list-style     : none;
+    transform      : translateX(-50%);
 }
 
 .sld-dot-item {
-    height: 30px;
-    width: 30px;
-    border: 1px solid #0e172c;
-    margin-right: 10px;
+    height       : 30px;
+    width        : 30px;
+    border       : 1px solid #0e172c;
+    margin-right : 10px;
     border-radius: 100rem;
 }
 
