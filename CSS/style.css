@@ -186,7 +186,7 @@ html {
     background-repeat    : no-repeat;
     background-size      : contain;
     border-radius: 100rem;
-
+    margin: 5px 0;
     /* 
     * ví dụ attachment:fixed use percent
     background-image: url("img_parallax.jpg");
@@ -242,46 +242,49 @@ html {
 }
 
 #modal-family .modal-body .modal-item:nth-child(1) {
-    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family1.jpg?raw=true");
-} 
-#modal-family .modal-body .modal-item:nth-child(2) {
-    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family2.jpg?raw=true");
-} 
-#modal-family .modal-body .modal-item:nth-child(3) {
-    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family3jpg.jpg?raw=true");
-} 
-#modal-family .modal-body .modal-item:nth-child(5) {
     background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family5.jpg?raw=true");
 } 
-#modal-family .modal-body .modal-item:nth-child(6) {
+#modal-family .modal-body .modal-item:nth-child(2) {
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family4.jpg?raw=true");
+} 
+#modal-family .modal-body .modal-item:nth-child(3) {
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family1.jpg?raw=true");
+} 
+#modal-family .modal-body .modal-item:nth-child(4) {
     background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family6.jpg?raw=true");
 } 
-#modal-family .modal-body .modal-item:nth-child(7) {
+#modal-family .modal-body .modal-item:nth-child(5) {
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family3.jpg?raw=true");
+} 
+#modal-family .modal-body .modal-item:nth-child(6) {
     background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family7.jpg?raw=true");
+} 
+#modal-family .modal-body .modal-item:nth-child(7) {
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family9.jpg?raw=true");
 } 
 #modal-family .modal-body .modal-item:nth-child(8) {
     background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family8.jpg?raw=true");
 } 
 #modal-family .modal-body .modal-item:nth-child(9) {
-    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family9.jpg?raw=true");
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family11.jpg?raw=true");
 } 
 #modal-family .modal-body .modal-item:nth-child(10) {
     background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family10.jpg?raw=true");
 } 
 #modal-family .modal-body .modal-item:nth-child(11) {
-    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family11.jpg?raw=true");
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family12.jpg?raw=true");
 } 
 #modal-family .modal-body .modal-item:nth-child(12) {
-    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family12.jpg?raw=true");
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family2.jpg?raw=true");
 } 
 #modal-family .modal-body .modal-item:nth-child(13) {
     background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family13.jpg?raw=true");
 } 
 #modal-family .modal-body .modal-item:nth-child(14) {
-    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family14.jpg?raw=true");
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family15.jpg?raw=true");
 } 
 #modal-family .modal-body .modal-item:nth-child(15) {
-    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family15.jpg?raw=true");
+    background-image: url("https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/family14.jpg?raw=true");
 } 
 
 
