@@ -138,19 +138,19 @@ html {
 }
 
 #modal-bridge .modal-body .modal-item:nth-child(1) {
-    background-image: url("/assets/img/aunt1.JPG");
+    background-image: url("../assets/img/aunt1.JPG");
 } 
 
 #modal-bridge .modal-body .modal-item:nth-child(2) {
-    background-image: url("/assets/img/aunt2.JPG");
+    background-image: url("../assets/img/aunt2.JPG");
 } 
 
 #modal-bridge .modal-body .modal-item:nth-child(3) {
-    background-image: url("/assets/img/aunt3.JPG");
+    background-image: url("../assets/img/aunt3.JPG");
 }
 
 #modal-bridge .modal-body .modal-item:nth-child(4) {
-    background-image: url("/assets/img/aunt5.JPG");
+    background-image: url("../assets/img/aunt5.JPG");
 } 
 
 #modal-groom .modal-container {
@@ -159,17 +159,17 @@ html {
 
 /*@------------------------------ MODAL GROOM ---------------------------*/
 #modal-groom .modal-body .modal-item:nth-child(1) {
-    background-image: url("/assets/img/uncle1.JPG");
+    background-image: url("../assets/img/uncle1.JPG");
 } 
 
 #modal-groom .modal-body .modal-item:nth-child(2) {
-    background-image: url("/assets/img/uncle2.JPG");
+    background-image: url("../assets/img/uncle2.JPG");
 } 
 #modal-groom .modal-body .modal-item:nth-child(3) {
-    background-image: url("/assets/img/uncle3.JPG");
+    background-image: url("../assets/img/uncle3.JPG");
 } 
 #modal-groom .modal-body .modal-item:nth-child(4) {
-    background-image: url("/assets/img/uncle4.JPG");
+    background-image: url("../assets/img/uncle4.JPG");
 } 
 
 #modal-groom .modal-container {
