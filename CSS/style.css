@@ -292,70 +292,70 @@ html {
 
 .slider_item:nth-child(1) {
     width          : 100%;
-    background     : url('../assets/img/main1.JPG') no-repeat;
+    background     : url('https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/main1.JPG?raw=true') no-repeat;
     background-size: contain;
     z-index        : 1;
 }
 
 .slider_item:nth-child(2) {
     width          : 100%;
-    background     : url('../assets/img/main2.JPG') no-repeat;
+    background     : url('https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/main2.JPG?raw=true') no-repeat;
     background-size: contain;
     z-index        : 2;
 }
 
 .slider_item:nth-child(3) {
     width          : 100%;
-    background     : url('../assets/img/main3.JPG') no-repeat;
+    background     : url('https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/main3.JPG?raw=true') no-repeat;
     background-size: contain;
     z-index        : 3;
 }
 
 .slider_item:nth-child(4) {
     width          : 100%;
-    background     : url('../assets/img/main4.JPG') no-repeat;
+    background     : url('https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/main4.JPG?raw=true') no-repeat;
     background-size: contain;
     z-index        : 4;
 }
 
 .slider_item:nth-child(5) {
     width          : 100%;
-    background     : url('../assets/img/main5.JPG') no-repeat;
+    background     : url('https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/main5.JPG?raw=true') no-repeat;
     background-size: contain;
     z-index        : 4;
 }
 
 .slider_item:nth-child(6) {
     width          : 100%;
-    background     : url('../assets/img/main6.JPG') no-repeat;
+    background     : url('https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/main6.JPG?raw=true') no-repeat;
     background-size: contain;
     z-index        : 4;
 }
 
 .slider_item:nth-child(7) {
     width          : 100%;
-    background     : url('../assets/img/main7.JPG') no-repeat;
+    background     : url('https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/main7.JPG?raw=true') no-repeat;
     background-size: contain;
     z-index        : 4;
 }
 
 .slider_item:nth-child(8) {
     width          : 100%;
-    background     : url('../assets/img/main8.JPG') no-repeat;
+    background     : url('https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/main8.JPG?raw=true') no-repeat;
     background-size: contain;
     z-index        : 4;
 }
 
 .slider_item:nth-child(9) {
     width          : 100%;
-    background     : url('../assets/img/main9.JPG') no-repeat;
+    background     : url('https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/main9.JPG?raw=true') no-repeat;
     background-size: contain;
     z-index        : 4;
 }
 
 .slider_item:nth-child(10) {
     width          : 100%;
-    background     : url('../assets/img/main10.JPG') no-repeat;
+    background     : url('https://github.com/TonyHoe/myAunt_Wedding/blob/main/assets/img/main10.JPG?raw=true') no-repeat;
     background-size: contain;
     z-index        : 4;
 }
