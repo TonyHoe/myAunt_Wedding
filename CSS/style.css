@@ -155,13 +155,15 @@ html {
 .modal-container .close-btn:hover {}
 
 /*@------------------------------ MODAL BRIDE ---------------------------*/
-#main-header .h-section img {
-    width        : 100px;
-    border-radius: 100rem;
+#main-header .section {
     cursor       : pointer;
 }
 
-#main-header .h-section img:hover {}
+#main-header .h-section img {
+    width        : 100px;
+    border-radius: 100rem;
+}
+
 
 @keyframes text_animation {
     to {
